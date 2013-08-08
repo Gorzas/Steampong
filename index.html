@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+  * Steampong version 0.0.1
+  *
+  * --Preliminar version of Steampong
+  *
+  * @author José David Cano
+  * @version 0.0.1
+  *
+-->
+<html>
+    <head>
+        <title>Steampong | K-Per Games</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />        
+    </head>
+    <body>
+        <canvas width="960" height="720" id="game">
+            Your browser doesn't support HTML5.<br/>
+            Please, <a href="https://www.google.com/intl/es/chrome/browser/">upgrade your browser</a>
+        </canvas>
+        <script src="src/lib/Box2dWeb-2.1.a.3.js"></script>
+        <script src="src/lib/simple-inherit.js"></script>
+        <script src="src/lib/require.min.js"></script>
+        <!--script src="src/Game.js" type="text/javascript"></script-->
+        <script src="src/game.min.js"></script>
+        <script type="text/javascript">
+            window.addEventListener('load', function() {
+                version = '0.0.1';
+                
+                var game = new Game(document.getElementById('game'), 'http://localhost/steampong');
+                        
+                game.start();
+            });
+        </script>
+    </body>
+</html>

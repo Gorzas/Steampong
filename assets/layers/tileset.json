@@ -1,0 +1,39 @@
+{ "height":1,
+ "layers":[
+        {
+         "data":[1],
+         "height":1,
+         "name":"Layer",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":1,
+         "x":0,
+         "y":0
+        }],
+ "orientation":"orthogonal",
+ "properties":
+    {
+
+    },
+ "tileheight":720,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "image":"assets/layers/tileset.jpg",
+         "imageheight":720,
+         "imagewidth":960,
+         "margin":0,
+         "name":"steampong",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":720,
+         "tilewidth":960
+        }],
+ "tilewidth":960,
+ "version":1,
+ "width":1
+}

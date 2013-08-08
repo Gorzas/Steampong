@@ -1,0 +1,6 @@
+src/core/*.js
+src/entities/base/*.js
+src/entities/*.js
+src/interfaces/*.js
+src/scenes/*.js
+src/Game.js

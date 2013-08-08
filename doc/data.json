@@ -1,0 +1,1649 @@
+{
+    "project": {},
+    "files": {
+        "src/core/DrawEngine.js": {
+            "name": "src/core/DrawEngine.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/core/Entity.js": {
+            "name": "src/core/Entity.js",
+            "modules": {},
+            "classes": {
+                "Entity": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/core/PhysicsEngine.js": {
+            "name": "src/core/PhysicsEngine.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/core/Scene.js": {
+            "name": "src/core/Scene.js",
+            "modules": {},
+            "classes": {
+                "Scene": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/core/SpriteSheet.js": {
+            "name": "src/core/SpriteSheet.js",
+            "modules": {},
+            "classes": {
+                "SpriteSheet": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/entities/base/Collisionable.js": {
+            "name": "src/entities/base/Collisionable.js",
+            "modules": {},
+            "classes": {
+                "Collisionable": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/entities/base/Interface.js": {
+            "name": "src/entities/base/Interface.js",
+            "modules": {},
+            "classes": {
+                "Interface": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/entities/Ball.js": {
+            "name": "src/entities/Ball.js",
+            "modules": {},
+            "classes": {
+                "Ball": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/entities/Paddle.js": {
+            "name": "src/entities/Paddle.js",
+            "modules": {},
+            "classes": {
+                "Paddle": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/entities/Player.js": {
+            "name": "src/entities/Player.js",
+            "modules": {},
+            "classes": {
+                "Player": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/interfaces/Scoreboard.js": {
+            "name": "src/interfaces/Scoreboard.js",
+            "modules": {},
+            "classes": {
+                "ScoreBoad": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/lib/require.js": {
+            "name": "src/lib/require.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/scenes/GameScene.js": {
+            "name": "src/scenes/GameScene.js",
+            "modules": {},
+            "classes": {
+                "GameScene": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/scenes/LoadingScene.js": {
+            "name": "src/scenes/LoadingScene.js",
+            "modules": {},
+            "classes": {
+                "LoadingScene": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/scenes/MainScene.js": {
+            "name": "src/scenes/MainScene.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/Game.js": {
+            "name": "src/Game.js",
+            "modules": {},
+            "classes": {
+                "Game": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "Entity": {
+            "name": "Entity",
+            "shortname": "Entity",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/core/Entity.js",
+            "line": 1,
+            "description": "Entity\n\nA base Entity class for all the objects that will be showing in the\nscenary."
+        },
+        "Scene": {
+            "name": "Scene",
+            "shortname": "Scene",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/core/Scene.js",
+            "line": 1,
+            "description": "Scene\n\nAbstract class. Base for all the Scenes in the game."
+        },
+        "SpriteSheet": {
+            "name": "SpriteSheet",
+            "shortname": "SpriteSheet",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/core/SpriteSheet.js",
+            "line": 1,
+            "description": "SpriteSheet\n\nIt handles the spritesheet of the game, creating the new sprites and\nretrieveng theirs data if they are needed.",
+            "is_constructor": 1
+        },
+        "Collisionable": {
+            "name": "Collisionable",
+            "shortname": "Collisionable",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/entities/base/Collisionable.js",
+            "line": 1,
+            "description": "Collisionable\n\nAbstract class used as base for the objects that admits collision."
+        },
+        "Interface": {
+            "name": "Interface",
+            "shortname": "Interface",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/entities/base/Interface.js",
+            "line": 1,
+            "description": "Interface\n\nVisual interface in landing. It creates new elements that will be\nworking at the beach"
+        },
+        "Ball": {
+            "name": "Ball",
+            "shortname": "Ball",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/entities/Ball.js",
+            "line": 1,
+            "description": "Ball\n\nThe ball of the game. The main character in the game.\n\nKnown issues:\n     -. Because of the lack of time there are plenty of physics improvements\n     to make the ball quicker and fluid",
+            "is_constructor": 1
+        },
+        "Paddle": {
+            "name": "Paddle",
+            "shortname": "Paddle",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/entities/Paddle.js",
+            "line": 1,
+            "description": "Paddle\n\nDefines every paddle in the canvas (Player and Computer).",
+            "is_constructor": 1
+        },
+        "Player": {
+            "name": "Player",
+            "shortname": "Player",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/entities/Player.js",
+            "line": 1,
+            "description": "Player\n\nMain player class. It's the main character of the game. It has the input\nlisteners.",
+            "is_constructor": 1
+        },
+        "ScoreBoad": {
+            "name": "ScoreBoad",
+            "shortname": "ScoreBoad",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/interfaces/Scoreboard.js",
+            "line": 1,
+            "description": "ScoreBoard\n\nEvery one of the objects is one of the numbers in the scoreBoard.",
+            "is_constructor": 1
+        },
+        "GameScene": {
+            "name": "GameScene",
+            "shortname": "GameScene",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/scenes/GameScene.js",
+            "line": 1,
+            "description": "GameScene\n\nIt's created when the user inits a new game. It handles all the entities in the\ncanvas drawing them and checking the current score of the game.",
+            "is_constructor": 1
+        },
+        "LoadingScene": {
+            "name": "LoadingScene",
+            "shortname": "LoadingScene",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/scenes/LoadingScene.js",
+            "line": 1,
+            "description": "LoadingScene\n\nBy loading this scene, we show something to the user while we are\nloading the rest of files.",
+            "is_constructor": 1
+        },
+        "Game": {
+            "name": "Game",
+            "shortname": "Game",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/Game.js",
+            "line": 1,
+            "description": "Main class.\n\nEngine of the game. It has a parameter with the current scene in the canvas.\nIt loads all the core files and inits canvas.",
+            "is_constructor": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "src/core/DrawEngine.js",
+            "line": 1,
+            "description": "DrawEngine\n\nHas three main tasks:\n     -. update the canvas clearing it first\n     -. allow to draw images in the canvas\n     -. allow to draw text and customing it as you wish",
+            "tclass": "DrawEngine",
+            "is_constructor": 1,
+            "class": "Entity"
+        },
+        {
+            "file": "src/core/DrawEngine.js",
+            "line": 13,
+            "description": "Context of the canvas. Need in order to draw any image in the canvas",
+            "itemtype": "property",
+            "name": "ctx",
+            "type": "CanvasRenderingContext2D",
+            "class": "Entity"
+        },
+        {
+            "file": "src/core/DrawEngine.js",
+            "line": 20,
+            "description": "Default font for the text written in the Canvas.",
+            "itemtype": "property",
+            "name": "font",
+            "type": "Object",
+            "class": "Entity"
+        },
+        {
+            "file": "src/core/DrawEngine.js",
+            "line": 32,
+            "description": "Constructor of a new DrawEngine.",
+            "itemtype": "method",
+            "name": "init",
+            "params": [
+                {
+                    "name": "ctx",
+                    "description": "Allows to draw in the canvas.",
+                    "type": "CanvasRenderingContext2D"
+                }
+            ],
+            "class": "Entity"
+        },
+        {
+            "file": "src/core/DrawEngine.js",
+            "line": 41,
+            "description": "Actually, draws an image in the canvas.",
+            "itemtype": "method",
+            "name": "drawImage",
+            "params": [
+                {
+                    "name": "Name",
+                    "description": "of the sprite",
+                    "type": "String"
+                },
+                {
+                    "name": "position",
+                    "description": "x in the canvas",
+                    "type": "Int|float"
+                },
+                {
+                    "name": "position",
+                    "description": "y in the canvas",
+                    "type": "Int|float"
+                },
+                {
+                    "name": "width",
+                    "description": "of the destination image",
+                    "type": "Int"
+                },
+                {
+                    "name": "height",
+                    "description": "of the destination image",
+                    "type": "Int"
+                }
+            ],
+            "class": "Entity"
+        },
+        {
+            "file": "src/core/DrawEngine.js",
+            "line": 65,
+            "description": "Draws any text in a position in the canvas.",
+            "itemtype": "method",
+            "name": "drawText",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "Position x in the canvas",
+                    "type": "Int|float"
+                },
+                {
+                    "name": "y",
+                    "description": "Position y in the canvas",
+                    "type": "Int|float"
+                },
+                {
+                    "name": "text",
+                    "description": "Text to write in the canvas",
+                    "type": "String"
+                },
+                {
+                    "name": "textFont",
+                    "description": "Font-family of the new text",
+                    "type": "String"
+                }
+            ],
+            "class": "Entity"
+        },
+        {
+            "file": "src/core/DrawEngine.js",
+            "line": 88,
+            "description": "Clears the canvas",
+            "itemtype": "method",
+            "name": "clear",
+            "class": "Entity"
+        },
+        {
+            "file": "src/core/Entity.js",
+            "line": 10,
+            "description": "Position of the Entity.",
+            "itemtype": "property",
+            "name": "pos",
+            "type": "Object",
+            "class": "Entity"
+        },
+        {
+            "file": "src/core/Entity.js",
+            "line": 20,
+            "description": "Size of the Entity",
+            "itemtype": "property",
+            "name": "size",
+            "type": "Object",
+            "class": "Entity"
+        },
+        {
+            "file": "src/core/Entity.js",
+            "line": 31,
+            "description": "Name of the sprite of the Entity",
+            "itemtype": "property",
+            "name": "sprite",
+            "type": "String",
+            "class": "Entity"
+        },
+        {
+            "file": "src/core/Entity.js",
+            "line": 39,
+            "description": "Indicates z-index of the Entity.",
+            "itemtype": "property",
+            "name": "z-index",
+            "type": "int",
+            "class": "Entity"
+        },
+        {
+            "file": "src/core/Entity.js",
+            "line": 46,
+            "description": "Creates a new Entity.\nBase structure for most objects.",
+            "itemtype": "method",
+            "name": "init",
+            "params": [
+                {
+                    "name": "sprite",
+                    "description": "Sprite name of the Entity.",
+                    "type": "String"
+                },
+                {
+                    "name": "x",
+                    "description": "Initial x position",
+                    "type": "Int"
+                },
+                {
+                    "name": "y",
+                    "description": "Initial y position",
+                    "type": "Int"
+                },
+                {
+                    "name": "w",
+                    "description": "Width of the object",
+                    "type": "Int"
+                },
+                {
+                    "name": "h",
+                    "description": "Height of the object",
+                    "type": "Int"
+                },
+                {
+                    "name": "zindex",
+                    "description": "Initial z-index of the object",
+                    "type": "Int"
+                }
+            ],
+            "class": "Entity"
+        },
+        {
+            "file": "src/core/Entity.js",
+            "line": 68,
+            "description": "Abstract method.\nMoves the Entity.",
+            "itemtype": "method",
+            "name": "move",
+            "class": "Entity"
+        },
+        {
+            "file": "src/core/Entity.js",
+            "line": 78,
+            "description": "Abstract method to check collisions",
+            "itemtype": "method",
+            "name": "onTouch",
+            "class": "Entity"
+        },
+        {
+            "file": "src/core/PhysicsEngine.js",
+            "line": 14,
+            "description": "Physics Engine of the game. Is the suggested engine by the\nUdacity HTML5 course.",
+            "class": "Scene"
+        },
+        {
+            "file": "src/core/Scene.js",
+            "line": 10,
+            "description": "Drawing handler object.",
+            "itemtype": "property",
+            "name": "drawEngine",
+            "type": "DrawEngine",
+            "class": "Scene"
+        },
+        {
+            "file": "src/core/Scene.js",
+            "line": 17,
+            "description": "Collection of entities created in the new Scene.",
+            "itemtype": "property",
+            "name": "entities",
+            "type": "Array",
+            "class": "Scene"
+        },
+        {
+            "file": "src/core/Scene.js",
+            "line": 25,
+            "description": "Creates a new Scene object.",
+            "itemtype": "method",
+            "name": "init",
+            "params": [
+                {
+                    "name": "drawEngine",
+                    "description": "It handles all the entities in the scene\nand draws them in the canvas.",
+                    "type": "DrawEngine"
+                }
+            ],
+            "class": "Scene"
+        },
+        {
+            "file": "src/core/Scene.js",
+            "line": 36,
+            "description": "Updates every Scene FPS times per second.",
+            "itemtype": "method",
+            "name": "update",
+            "class": "Scene"
+        },
+        {
+            "file": "src/core/SpriteSheet.js",
+            "line": 11,
+            "description": "Base image where the class is going to retrieve every sprite\nof the game",
+            "itemtype": "property",
+            "name": "img",
+            "type": "Image",
+            "class": "SpriteSheet"
+        },
+        {
+            "file": "src/core/SpriteSheet.js",
+            "line": 19,
+            "description": "Collection of sprites with the JSON data of the textures.",
+            "itemtype": "property",
+            "name": "sprites",
+            "type": "Array",
+            "class": "SpriteSheet"
+        },
+        {
+            "file": "src/core/SpriteSheet.js",
+            "line": 26,
+            "description": "Cretes new SpriteSheet",
+            "itemtype": "method",
+            "name": "init",
+            "class": "SpriteSheet"
+        },
+        {
+            "file": "src/core/SpriteSheet.js",
+            "line": 34,
+            "description": "Loads a JSON file with the sprite image data.",
+            "itemtype": "method",
+            "name": "load",
+            "params": [
+                {
+                    "name": "jsonFile",
+                    "description": "Has the data of the image project",
+                    "type": "File"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function to be called when the JSON file\nis loaded",
+                    "type": "Function"
+                }
+            ],
+            "class": "SpriteSheet"
+        },
+        {
+            "file": "src/core/SpriteSheet.js",
+            "line": 62,
+            "description": "Reads parsed JSON and creates a colletion with all the posibilities\nneeded",
+            "itemtype": "method",
+            "name": "parseSprites",
+            "params": [
+                {
+                    "name": "parsed",
+                    "description": "Parsed JSON",
+                    "type": "Object"
+                },
+                {
+                    "name": "callback",
+                    "description": "Function to be called when all it's loaded",
+                    "type": "Function"
+                }
+            ],
+            "class": "SpriteSheet"
+        },
+        {
+            "file": "src/entities/base/Collisionable.js",
+            "line": 10,
+            "description": "Direction of the Entity.",
+            "itemtype": "property",
+            "name": "dir",
+            "type": "Object",
+            "class": "Collisionable"
+        },
+        {
+            "file": "src/entities/base/Collisionable.js",
+            "line": 20,
+            "description": "It has a BodyDef object that would contain all the physics information.",
+            "itemtype": "property",
+            "name": "physBody",
+            "type": "BodyDef",
+            "class": "Collisionable"
+        },
+        {
+            "file": "src/entities/base/Collisionable.js",
+            "line": 27,
+            "description": "Speed of the Entity",
+            "itemtype": "property",
+            "name": "speed",
+            "type": "int",
+            "class": "Collisionable"
+        },
+        {
+            "file": "src/entities/base/Collisionable.js",
+            "line": 34,
+            "description": "Creates a new Collisionable.",
+            "itemtype": "method",
+            "name": "init",
+            "params": [
+                {
+                    "name": "sprite",
+                    "description": "Sprite of the Entity",
+                    "type": "String"
+                },
+                {
+                    "name": "int",
+                    "description": "Position x",
+                    "type": "Int"
+                },
+                {
+                    "name": "y",
+                    "description": "Initial y position",
+                    "type": "Int"
+                },
+                {
+                    "name": "w",
+                    "description": "Width of the object",
+                    "type": "Int"
+                },
+                {
+                    "name": "h",
+                    "description": "Height of the object",
+                    "type": "Int"
+                },
+                {
+                    "name": "zindex",
+                    "description": "Initial z-index of the object",
+                    "type": "Int"
+                },
+                {
+                    "name": "dir",
+                    "description": "Direction where the ball will be going",
+                    "type": "Vec2"
+                },
+                {
+                    "name": "speed",
+                    "description": "Speed of Entity",
+                    "type": "Int"
+                }
+            ],
+            "class": "Collisionable"
+        },
+        {
+            "file": "src/entities/base/Interface.js",
+            "line": 11,
+            "description": "Creates a new Interface",
+            "params": [
+                {
+                    "name": "sprite",
+                    "description": "Sprite of the Entity",
+                    "type": "String"
+                },
+                {
+                    "name": "int",
+                    "description": "Position x",
+                    "type": "Int"
+                },
+                {
+                    "name": "y",
+                    "description": "Initial y position",
+                    "type": "Int"
+                },
+                {
+                    "name": "w",
+                    "description": "Width of the object",
+                    "type": "Int"
+                },
+                {
+                    "name": "h",
+                    "description": "Height of the object",
+                    "type": "Int"
+                },
+                {
+                    "name": "zindex",
+                    "description": "Initial z-index of the object",
+                    "type": "Int"
+                }
+            ],
+            "class": "Interface"
+        },
+        {
+            "file": "src/entities/Ball.js",
+            "line": 15,
+            "description": "Creates a new Ball",
+            "itemtype": "method",
+            "name": "init",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "Position x in the canvas",
+                    "type": "Int"
+                },
+                {
+                    "name": "y",
+                    "description": "Position y in the canvas",
+                    "type": "Int"
+                },
+                {
+                    "name": "w",
+                    "description": "Width of the ball",
+                    "type": "Int"
+                },
+                {
+                    "name": "h",
+                    "description": "Height of the ball",
+                    "type": "Int"
+                }
+            ],
+            "class": "Ball"
+        },
+        {
+            "file": "src/entities/Ball.js",
+            "line": 50,
+            "description": "Creates a new first direction to the ball",
+            "itemtype": "method",
+            "name": "initDir",
+            "return": {
+                "description": "New direction of the ball",
+                "type": "Object"
+            },
+            "class": "Ball"
+        },
+        {
+            "file": "src/entities/Ball.js",
+            "line": 59,
+            "description": "Restarts the ball, positioning it in middle of the canvas and\ninits its direction",
+            "itemtype": "method",
+            "name": "restart",
+            "params": [
+                {
+                    "name": "pos",
+                    "description": "Position in x,y Axis",
+                    "type": "Object"
+                },
+                {
+                    "name": "dir",
+                    "description": "Initial direction",
+                    "type": "Object"
+                }
+            ],
+            "class": "Ball"
+        },
+        {
+            "file": "src/entities/Ball.js",
+            "line": 73,
+            "description": "Moves the ball in the canvas",
+            "itemtype": "method",
+            "name": "move",
+            "class": "Ball"
+        },
+        {
+            "file": "src/entities/Ball.js",
+            "line": 90,
+            "description": "NOT IMPLEMENTED YET\n\nHandler that would be called when ball gets a collision",
+            "class": "Ball"
+        },
+        {
+            "file": "src/entities/Paddle.js",
+            "line": 10,
+            "description": "Ball of the game.\nNeeded for computer paddle in order to follow the ball's direction.",
+            "itemtype": "property",
+            "name": "ball",
+            "type": "Ball",
+            "class": "Paddle"
+        },
+        {
+            "file": "src/entities/Paddle.js",
+            "line": 18,
+            "description": "Max speed of paddle.\nUsed for paddle flow and avoid to get excesive speeds of movement.",
+            "itemtype": "property",
+            "name": "maxSpeed",
+            "type": "int",
+            "class": "Paddle"
+        },
+        {
+            "file": "src/entities/Paddle.js",
+            "line": 26,
+            "description": "Creates a new paddle.",
+            "params": [
+                {
+                    "name": "Type",
+                    "description": "of paddle. It can be 'left' or 'right'",
+                    "type": "String"
+                },
+                {
+                    "name": "x",
+                    "description": "position",
+                    "type": "Int"
+                },
+                {
+                    "name": "y",
+                    "description": "position",
+                    "type": "Int"
+                },
+                {
+                    "name": "width",
+                    "description": "of the paddle",
+                    "type": "Int"
+                },
+                {
+                    "name": "height",
+                    "description": "of the paddle",
+                    "type": "Int"
+                }
+            ],
+            "class": "Paddle"
+        },
+        {
+            "file": "src/entities/Paddle.js",
+            "line": 60,
+            "description": "Just for computer, changes position of paddle following the current\nball's position.\n\nNeeds a ball associtated.",
+            "itemtype": "method",
+            "name": "followBall",
+            "class": "Paddle"
+        },
+        {
+            "file": "src/entities/Paddle.js",
+            "line": 85,
+            "description": "Moves paddle on canvas",
+            "itemtype": "method",
+            "name": "move",
+            "class": "Paddle"
+        },
+        {
+            "file": "src/entities/Player.js",
+            "line": 11,
+            "description": "It has all the posible actions with their current trigger key",
+            "itemtype": "property",
+            "name": "bindings",
+            "type": "Object",
+            "class": "Player"
+        },
+        {
+            "file": "src/entities/Player.js",
+            "line": 18,
+            "description": "Array with all the available actions and a boolean value that indicates\nif the Entity is moving and direction",
+            "itemtype": "property",
+            "name": "actions",
+            "type": "Object",
+            "class": "Player"
+        },
+        {
+            "file": "src/entities/Player.js",
+            "line": 44,
+            "description": "From HTML5 Udacity course.",
+            "class": "Player"
+        },
+        {
+            "file": "src/entities/Player.js",
+            "line": 54,
+            "description": "From HTML5 Udacity course.",
+            "class": "Player"
+        },
+        {
+            "file": "src/entities/Player.js",
+            "line": 64,
+            "description": "From HTML5 Udacity course.",
+            "class": "Player"
+        },
+        {
+            "file": "src/interfaces/Scoreboard.js",
+            "line": 11,
+            "description": "Constructs a new ScoreBoard object.",
+            "itemtype": "method",
+            "name": "init",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "Init value of the marker (usually, 0)",
+                    "type": "Int|char"
+                },
+                {
+                    "name": "x",
+                    "description": "Position in x axis",
+                    "type": "Int"
+                },
+                {
+                    "name": "y",
+                    "description": "Position in y axis",
+                    "type": "Int"
+                }
+            ],
+            "class": "ScoreBoad"
+        },
+        {
+            "file": "src/interfaces/Scoreboard.js",
+            "line": 31,
+            "description": "Changes the current value of the marker.",
+            "itemtype": "method",
+            "name": "changeValue",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "New value of the marker",
+                    "type": "Int|char"
+                }
+            ],
+            "class": "ScoreBoad"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1,
+            "license": "RequireJS 2.1.6 Copyright (c) 2010-2012, The Dojo Foundation All Rights Reserved.\nAvailable via the MIT or new BSD license.\nsee: http://github.com/jrburke/requirejs for details",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 49,
+            "description": "Helper function for iterating over an array. If the func returns\na true value, it will break out of the loop.",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 64,
+            "description": "Helper function for iterating over an array backwards. If the func\nreturns a true value, it will break out of the loop.",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 87,
+            "description": "Cycles over properties in an object and calls a function for each\nproperty value. If the function returns a truthy value, then the\niteration is stopped.",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 103,
+            "description": "Simple function to mix in properties from source into target,\nbut only if target does not already have a property of the same name.",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 154,
+            "description": "Constructs an error with a pointer to an URL with more information.",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "the error ID that maps to an ID on a web page.",
+                    "type": "String"
+                },
+                {
+                    "name": "message",
+                    "description": "human readable error.",
+                    "type": "String"
+                },
+                {
+                    "name": "err",
+                    "description": "the original error, if there is one.",
+                    "type": "Error",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Error"
+            },
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 220,
+            "description": "Trims the . and .. from an array of path segments.\nIt will keep a leading path segment if a .. will become\nthe first path segment, to help with module name lookups,\nwhich act like paths, but can be remapped. But the end result,\nall paths that use this function should look normalized.\nNOTE: this method MODIFIES the input array.",
+            "params": [
+                {
+                    "name": "ary",
+                    "description": "the array of path segments.",
+                    "type": "Array"
+                }
+            ],
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 253,
+            "description": "Given a relative module name, like ./something, normalize it to\na real name that can be mapped to a path.",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "the relative name",
+                    "type": "String"
+                },
+                {
+                    "name": "baseName",
+                    "description": "a real name that the name arg is relative\nto.",
+                    "type": "String"
+                },
+                {
+                    "name": "applyMap",
+                    "description": "apply the map config to the value. Should\nonly be done if this normalization is for a dependency ID.",
+                    "type": "Boolean"
+                }
+            ],
+            "return": {
+                "description": "normalized name",
+                "type": "String"
+            },
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 399,
+            "description": "Creates a module mapping that includes plugin prefix, module\nname, and path. If parentModuleMap is provided it will\nalso normalize the name via require.normalize()",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "the module name",
+                    "type": "String"
+                },
+                {
+                    "name": "parentModuleMap",
+                    "description": "parent module map\nfor the module name, used to resolve relative names.",
+                    "type": "String",
+                    "optional": true
+                },
+                {
+                    "name": "isNormalized:",
+                    "description": "is the ID already normalized.\nThis is true if this call is done for a define() module ID.",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "applyMap:",
+                    "description": "apply the map config to the ID.\nShould only be true if this map is for a dependency.",
+                    "type": "Boolean"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 541,
+            "description": "Internal method to transfer globalQueue items to this context's\ndefQueue.",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 829,
+            "description": "Checks if the module is ready to define itself, and if so,\ndefine it.",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1188,
+            "description": "Given an event from a script node, get the requirejs info from it,\nand then removes the event listeners on the node.",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "",
+                    "type": "Event"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1241,
+            "description": "Set a configuration for the context.",
+            "params": [
+                {
+                    "name": "cfg",
+                    "description": "config object to integrate.",
+                    "type": "Object"
+                }
+            ],
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1425,
+            "description": "Converts a module name + .extension into an URL path.\n*Requires* the use of a module name. It does not support using\nplain URLs like nameToUrl.",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1487,
+            "description": "Called to enable a module if it is still in the registry\nawaiting enablement. A second arg, parent, the parent module,\nis passed in for context, when this method is overriden by\nthe optimizer. Not shown here to keep code compact.",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1500,
+            "description": "Internal method used by environment adapters to complete a load event.\nA load event could be a script load or just a load pass from a synchronous\nload call.",
+            "params": [
+                {
+                    "name": "moduleName",
+                    "description": "the name of the module to potentially complete.",
+                    "type": "String"
+                }
+            ],
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1556,
+            "description": "Converts a module name to a file path. Supports cases where\nmoduleName may actually be just an URL.\nNote that it **does not** call normalize on the moduleName,\nit is assumed to have already been normalized. This is an\ninternal API, not a public one. Use toUrl for the public API.",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1627,
+            "description": "Executes a module callback function. Broken out as a separate function\nsolely to allow the build system to sequence the files in the built\nlayer in the right sequence.",
+            "access": "private",
+            "tagname": "",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1638,
+            "description": "callback for script loads, used to check status of loading.",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "the event from the browser for the script\nthat was loaded.",
+                    "type": "Event"
+                }
+            ],
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1660,
+            "description": "Callback for script errors.",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1675,
+            "description": "Main entry point.\n\nIf the only argument to require is a string, then the module that\nis represented by that string is fetched for the appropriate context.\n\nIf the first argument is an array, then it will be treated as an array\nof dependency string names to fetch. An optional function callback can\nbe specified to execute when all of those dependencies are available.\n\nMake a local req variable to help Caja compliance (it assumes things\non a require that are not standardized), and to give a short\nname for minification/local scope use.",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1725,
+            "description": "Support require.config() to make it easier to cooperate with other\nAMD loaders on globally agreed names.",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1733,
+            "description": "Execute something after the current tick\nof the event loop. Override for other envs\nthat have a better solution than setTimeout.",
+            "params": [
+                {
+                    "name": "fn",
+                    "description": "function to execute later.",
+                    "type": "Function"
+                }
+            ],
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1743,
+            "description": "Export require as a global, but only if it does not already exist.",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1790,
+            "description": "Any errors that require explicitly generates will be passed to this\nfunction. Intercept/override it if you want custom error handling.",
+            "params": [
+                {
+                    "name": "err",
+                    "description": "the error object.",
+                    "type": "Error"
+                }
+            ],
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1797,
+            "description": "Does the request to load a module for the browser case.\nMake this a separate function to allow other environments\nto override it.",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "the require context to find state.",
+                    "type": "Object"
+                },
+                {
+                    "name": "moduleName",
+                    "description": "the name of the module.",
+                    "type": "String"
+                },
+                {
+                    "name": "url",
+                    "description": "the URL to the module.",
+                    "type": "Object"
+                }
+            ],
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 1958,
+            "description": "The function that handles definitions of modules. Differs from\nrequire() in that a string for the module should be the first argument,\nand the function to execute after dependencies are loaded should\nreturn a value to define the module corresponding to the first argument's\nname.",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/lib/require.js",
+            "line": 2032,
+            "description": "Executes the text. Normally just uses eval, but can be modified\nto use a better, environment-specific call. Only used for transpiling\nloader plugins, not for plain JS modules.",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "the text to execute/evaluate.",
+                    "type": "String"
+                }
+            ],
+            "class": "GameScene"
+        },
+        {
+            "file": "src/scenes/GameScene.js",
+            "line": 11,
+            "description": "Ball of the game.",
+            "itemtype": "property",
+            "name": "ball",
+            "type": "Ball",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/scenes/GameScene.js",
+            "line": 18,
+            "description": "Current score in the game.",
+            "itemtype": "property",
+            "name": "scorre",
+            "type": "Object",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/scenes/GameScene.js",
+            "line": 28,
+            "description": "An array with all the score boards in the game.",
+            "itemtype": "property",
+            "name": "scoreBoards",
+            "type": "Array",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/scenes/GameScene.js",
+            "line": 36,
+            "description": "Creates a new GameScene object.\nInits the scene loading all the needed files and has a continuos \nchecking of the current score.",
+            "itemtype": "method",
+            "name": "init",
+            "params": [
+                {
+                    "name": "drawEngine",
+                    "description": "It handles all the entities in the scene\nand draws them in the canvas.",
+                    "type": "DrawEngine"
+                }
+            ],
+            "class": "GameScene"
+        },
+        {
+            "file": "src/scenes/GameScene.js",
+            "line": 50,
+            "description": "Loads all the needed entities",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/scenes/GameScene.js",
+            "line": 110,
+            "description": "Checks if ball has arrived to any of the walls",
+            "itemtype": "method",
+            "name": "checkScore",
+            "return": {
+                "description": "If ball has touch any of the walls",
+                "type": "Bool"
+            },
+            "class": "GameScene"
+        },
+        {
+            "file": "src/scenes/GameScene.js",
+            "line": 134,
+            "description": "Actually, changes the values of the score board.",
+            "itemtype": "method",
+            "name": "updateScore",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/scenes/GameScene.js",
+            "line": 145,
+            "description": "Updates physics engine of the world.",
+            "class": "GameScene"
+        },
+        {
+            "file": "src/scenes/LoadingScene.js",
+            "line": 11,
+            "description": "Loads a new LoadingScene.",
+            "itemtype": "method",
+            "name": "init",
+            "params": [
+                {
+                    "name": "drawEngine",
+                    "description": "Draws all the entities in the scene",
+                    "type": "DrawEngine"
+                }
+            ],
+            "class": "LoadingScene"
+        },
+        {
+            "file": "src/scenes/LoadingScene.js",
+            "line": 20,
+            "description": "Updates canvas",
+            "itemtype": "method",
+            "name": "update",
+            "class": "LoadingScene"
+        },
+        {
+            "file": "src/scenes/MainScene.js",
+            "line": 1,
+            "description": "CURRENTLY NOT USED\n\nIt would mantain de main list of options to an user after get the page loaded.",
+            "class": "Game"
+        },
+        {
+            "file": "src/Game.js",
+            "line": 11,
+            "description": "Base url of the server.\nUsed for load files without relative paths.",
+            "itemtype": "property",
+            "name": "baseUrl",
+            "type": "String",
+            "class": "Game"
+        },
+        {
+            "file": "src/Game.js",
+            "line": 19,
+            "description": "Contains the main canvas.",
+            "itemtype": "property",
+            "name": "canvas",
+            "type": "DOMElement",
+            "class": "Game"
+        },
+        {
+            "file": "src/Game.js",
+            "line": 26,
+            "description": "Drawing handler object.",
+            "itemtype": "property",
+            "name": "drawEngine",
+            "type": "DrawEngine",
+            "class": "Game"
+        },
+        {
+            "file": "src/Game.js",
+            "line": 33,
+            "description": "Frames per second.",
+            "itemtype": "property",
+            "name": "fps",
+            "type": "int",
+            "class": "Game"
+        },
+        {
+            "file": "src/Game.js",
+            "line": 40,
+            "description": "Current enable scene",
+            "itemtype": "property",
+            "name": "scene",
+            "type": "Scene",
+            "class": "Game"
+        },
+        {
+            "file": "src/Game.js",
+            "line": 47,
+            "description": "Size of the canvas.",
+            "itemtype": "property",
+            "name": "size",
+            "type": "Object",
+            "class": "Game"
+        },
+        {
+            "file": "src/Game.js",
+            "line": 57,
+            "description": "Creates a new Game object.",
+            "params": [
+                {
+                    "name": "canvas",
+                    "description": "Main canvas of the Game",
+                    "type": "DOMElement"
+                },
+                {
+                    "name": "baseUrl",
+                    "description": "Base url of the page",
+                    "type": "String"
+                }
+            ],
+            "class": "Game"
+        },
+        {
+            "file": "src/Game.js",
+            "line": 70,
+            "description": "Starts a new Game.\n\nIt handles the Loading Scene and, when everything has been loaded, it calls\nthe main scene of the game.\n\nIt's responsability is to load all the core files and mantain the Scene.",
+            "class": "Game"
+        },
+        {
+            "file": "src/Game.js",
+            "line": 116,
+            "description": "Updates the canvas about FPS times a second.",
+            "class": "Game"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: tclass",
+            "line": " src/core/DrawEngine.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " src/lib/require.js:1"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/lib/require.js:154"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/lib/require.js:253"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/lib/require.js:399"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/lib/require.js:1188"
+        },
+        {
+            "message": "Missing item type\nDrawEngine\n\nHas three main tasks:\n     -. update the canvas clearing it first\n     -. allow to draw images in the canvas\n     -. allow to draw text and customing it as you wish",
+            "line": " src/core/DrawEngine.js:1"
+        },
+        {
+            "message": "Missing item type\nPhysics Engine of the game. Is the suggested engine by the\nUdacity HTML5 course.",
+            "line": " src/core/PhysicsEngine.js:14"
+        },
+        {
+            "message": "Missing item type\nCreates a new Interface",
+            "line": " src/entities/base/Interface.js:11"
+        },
+        {
+            "message": "Missing item type\nNOT IMPLEMENTED YET\n\nHandler that would be called when ball gets a collision",
+            "line": " src/entities/Ball.js:90"
+        },
+        {
+            "message": "Missing item type\nCreates a new paddle.",
+            "line": " src/entities/Paddle.js:26"
+        },
+        {
+            "message": "Missing item type\nFrom HTML5 Udacity course.",
+            "line": " src/entities/Player.js:44"
+        },
+        {
+            "message": "Missing item type\nFrom HTML5 Udacity course.",
+            "line": " src/entities/Player.js:54"
+        },
+        {
+            "message": "Missing item type\nFrom HTML5 Udacity course.",
+            "line": " src/entities/Player.js:64"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src/lib/require.js:1"
+        },
+        {
+            "message": "Missing item type\nHelper function for iterating over an array. If the func returns\na true value, it will break out of the loop.",
+            "line": " src/lib/require.js:49"
+        },
+        {
+            "message": "Missing item type\nHelper function for iterating over an array backwards. If the func\nreturns a true value, it will break out of the loop.",
+            "line": " src/lib/require.js:64"
+        },
+        {
+            "message": "Missing item type\nCycles over properties in an object and calls a function for each\nproperty value. If the function returns a truthy value, then the\niteration is stopped.",
+            "line": " src/lib/require.js:87"
+        },
+        {
+            "message": "Missing item type\nSimple function to mix in properties from source into target,\nbut only if target does not already have a property of the same name.",
+            "line": " src/lib/require.js:103"
+        },
+        {
+            "message": "Missing item type\nConstructs an error with a pointer to an URL with more information.",
+            "line": " src/lib/require.js:154"
+        },
+        {
+            "message": "Missing item type\nTrims the . and .. from an array of path segments.\nIt will keep a leading path segment if a .. will become\nthe first path segment, to help with module name lookups,\nwhich act like paths, but can be remapped. But the end result,\nall paths that use this function should look normalized.\nNOTE: this method MODIFIES the input array.",
+            "line": " src/lib/require.js:220"
+        },
+        {
+            "message": "Missing item type\nGiven a relative module name, like ./something, normalize it to\na real name that can be mapped to a path.",
+            "line": " src/lib/require.js:253"
+        },
+        {
+            "message": "Missing item type\nCreates a module mapping that includes plugin prefix, module\nname, and path. If parentModuleMap is provided it will\nalso normalize the name via require.normalize()",
+            "line": " src/lib/require.js:399"
+        },
+        {
+            "message": "Missing item type\nInternal method to transfer globalQueue items to this context's\ndefQueue.",
+            "line": " src/lib/require.js:541"
+        },
+        {
+            "message": "Missing item type\nChecks if the module is ready to define itself, and if so,\ndefine it.",
+            "line": " src/lib/require.js:829"
+        },
+        {
+            "message": "Missing item type\nGiven an event from a script node, get the requirejs info from it,\nand then removes the event listeners on the node.",
+            "line": " src/lib/require.js:1188"
+        },
+        {
+            "message": "Missing item type\nSet a configuration for the context.",
+            "line": " src/lib/require.js:1241"
+        },
+        {
+            "message": "Missing item type\nConverts a module name + .extension into an URL path.\n*Requires* the use of a module name. It does not support using\nplain URLs like nameToUrl.",
+            "line": " src/lib/require.js:1425"
+        },
+        {
+            "message": "Missing item type\nCalled to enable a module if it is still in the registry\nawaiting enablement. A second arg, parent, the parent module,\nis passed in for context, when this method is overriden by\nthe optimizer. Not shown here to keep code compact.",
+            "line": " src/lib/require.js:1487"
+        },
+        {
+            "message": "Missing item type\nInternal method used by environment adapters to complete a load event.\nA load event could be a script load or just a load pass from a synchronous\nload call.",
+            "line": " src/lib/require.js:1500"
+        },
+        {
+            "message": "Missing item type\nConverts a module name to a file path. Supports cases where\nmoduleName may actually be just an URL.\nNote that it **does not** call normalize on the moduleName,\nit is assumed to have already been normalized. This is an\ninternal API, not a public one. Use toUrl for the public API.",
+            "line": " src/lib/require.js:1556"
+        },
+        {
+            "message": "Missing item type\nExecutes a module callback function. Broken out as a separate function\nsolely to allow the build system to sequence the files in the built\nlayer in the right sequence.",
+            "line": " src/lib/require.js:1627"
+        },
+        {
+            "message": "Missing item type\ncallback for script loads, used to check status of loading.",
+            "line": " src/lib/require.js:1638"
+        },
+        {
+            "message": "Missing item type\nCallback for script errors.",
+            "line": " src/lib/require.js:1660"
+        },
+        {
+            "message": "Missing item type\nMain entry point.\n\nIf the only argument to require is a string, then the module that\nis represented by that string is fetched for the appropriate context.\n\nIf the first argument is an array, then it will be treated as an array\nof dependency string names to fetch. An optional function callback can\nbe specified to execute when all of those dependencies are available.\n\nMake a local req variable to help Caja compliance (it assumes things\non a require that are not standardized), and to give a short\nname for minification/local scope use.",
+            "line": " src/lib/require.js:1675"
+        },
+        {
+            "message": "Missing item type\nSupport require.config() to make it easier to cooperate with other\nAMD loaders on globally agreed names.",
+            "line": " src/lib/require.js:1725"
+        },
+        {
+            "message": "Missing item type\nExecute something after the current tick\nof the event loop. Override for other envs\nthat have a better solution than setTimeout.",
+            "line": " src/lib/require.js:1733"
+        },
+        {
+            "message": "Missing item type\nExport require as a global, but only if it does not already exist.",
+            "line": " src/lib/require.js:1743"
+        },
+        {
+            "message": "Missing item type\nAny errors that require explicitly generates will be passed to this\nfunction. Intercept/override it if you want custom error handling.",
+            "line": " src/lib/require.js:1790"
+        },
+        {
+            "message": "Missing item type\nDoes the request to load a module for the browser case.\nMake this a separate function to allow other environments\nto override it.",
+            "line": " src/lib/require.js:1797"
+        },
+        {
+            "message": "Missing item type\nThe function that handles definitions of modules. Differs from\nrequire() in that a string for the module should be the first argument,\nand the function to execute after dependencies are loaded should\nreturn a value to define the module corresponding to the first argument's\nname.",
+            "line": " src/lib/require.js:1958"
+        },
+        {
+            "message": "Missing item type\nExecutes the text. Normally just uses eval, but can be modified\nto use a better, environment-specific call. Only used for transpiling\nloader plugins, not for plain JS modules.",
+            "line": " src/lib/require.js:2032"
+        },
+        {
+            "message": "Missing item type\nLoads all the needed entities",
+            "line": " src/scenes/GameScene.js:50"
+        },
+        {
+            "message": "Missing item type\nUpdates physics engine of the world.",
+            "line": " src/scenes/GameScene.js:145"
+        },
+        {
+            "message": "Missing item type\nCURRENTLY NOT USED\n\nIt would mantain de main list of options to an user after get the page loaded.",
+            "line": " src/scenes/MainScene.js:1"
+        },
+        {
+            "message": "Missing item type\nCreates a new Game object.",
+            "line": " src/Game.js:57"
+        },
+        {
+            "message": "Missing item type\nStarts a new Game.\n\nIt handles the Loading Scene and, when everything has been loaded, it calls\nthe main scene of the game.\n\nIt's responsability is to load all the core files and mantain the Scene.",
+            "line": " src/Game.js:70"
+        },
+        {
+            "message": "Missing item type\nUpdates the canvas about FPS times a second.",
+            "line": " src/Game.js:116"
+        }
+    ]
+}
