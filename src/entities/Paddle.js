@@ -61,7 +61,7 @@ Paddle = Collisionable.extend({
      * Just for computer, changes position of paddle following the current
      * ball's position.
      * 
-     * Needs a ball associtated.
+     * Needs a ball associated.
      * 
      * @method followBall
      * 

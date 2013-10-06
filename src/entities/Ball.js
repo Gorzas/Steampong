@@ -85,6 +85,8 @@ Ball = Collisionable.extend({
             
             this.pos.x = pos.x;
             this.pos.y = pos.y;
+            
+            // this.physBody.SetPosition(pos);
         }
     },
     /**
