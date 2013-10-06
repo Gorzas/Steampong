@@ -78,7 +78,7 @@ Paddle = Collisionable.extend({
                         (this.speed < this.maxSpeed)) {
                 this.speed++;
             } else if (this.speed !== 0) {
-                this.speed += (this.speed > 0) ? -1 : 1;            
+                this.speed += (this.speed > 0) ? -5 : 5;            
             }
         }
     },

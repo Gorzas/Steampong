@@ -114,6 +114,7 @@ GameScene = Scene.extend({
             }
             
             gameScene.audio.loop = true;
+            gameScene.audio.volume = 0.5;
             
             gameScene.audio.play();
         });

@@ -26,7 +26,7 @@ Ball = Collisionable.extend({
         // interval {-1, 1}
         var dir = this.initDir(), 
             entityDef = {},
-            speed = 1800;
+            speed = 5;
         
         this._super('bola.png', x, y, w, h, 10, dir, speed);
         
@@ -69,6 +69,7 @@ Ball = Collisionable.extend({
         this.pos = pos;
         this.physBody.SetPosition(this.pos);
         this.dir = dir;
+        this.speed = 5;
     },
     /**
      * Moves the ball in the canvas
@@ -81,12 +82,13 @@ Ball = Collisionable.extend({
                                                  this.dir.y * this.speed));*/
 
         if(this.physBody !== null) {
-            var pos = this.physBody.GetPosition();
+            var pos = this.physBody.GetPosition(),
+                dir = this.physBody.GetLinearVelocity();
             
-            this.pos.x = pos.x;
-            this.pos.y = pos.y;
+            this.pos.x = this.pos.x + (Math.floor(dir.x / Math.abs(dir.x)) * this.speed);
+            this.pos.y = this.pos.y + (Math.floor(dir.y / Math.abs(dir.y)) * this.speed);
             
-            // this.physBody.SetPosition(pos);
+            this.physBody.SetPosition(this.pos);
         }
     },
     /**
@@ -95,6 +97,8 @@ Ball = Collisionable.extend({
      * Handler that would be called when ball gets a collision
      */        
     onTouch: function(contact, body, impulse) {
-
+        if (body.GetType() === Body.b2_dynamicBody) {
+            this.speed++;
+        }
     }
 });
