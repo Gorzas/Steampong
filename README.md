@@ -5,11 +5,11 @@ Steampong. HTML5 Game for Udacity course.
 
 Made by K-Per Games @2013
 
-*Design*
+**Design**
 Isabel María Cano - [@IsiAngeath](https://twitter.com/isiAngeath)
 
-*Music*
+**Music**
 Miguel Ángel Poveda - @Povosus
 
-*Developer*
+**Developer**
 José David Cano - [@gorzas](https://twitter.com/gorzas)
